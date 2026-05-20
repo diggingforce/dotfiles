@@ -1,0 +1,65 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "file",
+        "source": "~/.config/fastfetch/logo_2.txt",
+        "color": {
+            "1": "white"
+        }
+    },
+    "display": {
+        "separator": "  ",
+        "color": "white",
+        "constants": ["\u001b[37m", "\u001b[37m", "\u001b[37m", "\u001b[37m"]
+    },
+    "modules": [
+        "break",
+        {
+            "type": "custom",
+            "key": "╭───────────────────────────────────╮"
+        },
+        {
+            "type": "kernel",
+            "key": "│   kernel ",
+            "format": "{release>22} │"
+        },
+        {
+            "type": "command",
+            "key": "│   uptime ",
+            "text": "uptime -p | cut -d ' ' -f 2-",
+            "format": "{>22} │"
+        },
+        {
+            "type": "shell",
+            "key": "│   shell  ",
+            "format": "{pretty-name>22} │"
+        },
+        {
+            "type": "command",
+            "key": "│   mem    ",
+            "text": "free -m | awk 'NR==2{printf \"%.2f GiB / %.2f GiB\",$3/1024,$2/1024}'",
+            "format": "{>22} │"
+        },
+        {
+            "type": "packages",
+            "key": "│   pkgs   ",
+            "format": "{all>22} │"
+        },
+        {
+            "type": "command",
+            "key": "│   user   ",
+            "text": "echo $USER",
+            "format": "{>22} │"
+        },
+        {
+            "type": "os",
+            "key": "│   distro ",
+            "format": "{pretty-name>22} │"
+        },
+        {
+            "type": "custom",
+            "key": "╰───────────────────────────────────╯"
+        },
+        "break"
+    ]
+}
