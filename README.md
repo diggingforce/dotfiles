@@ -1,13 +1,10 @@
 # Dotfiles!
 Dotfiles i use for daily work and everything else.
 
-OS - Arch Linux (CachyOS)
-
-WM - MangoWC (Wayland)
-
-TERM - Kitty
-
-THEME - Monochrome (kinda did it my way)
+OS :: Arch Linux (CachyOS)
+WM :: MangoWC (Wayland)
+TERM :: Kitty
+THEME :: Monochrome (kinda did it my way)
 
 ![image](screenshot.png)
 
