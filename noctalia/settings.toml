@@ -1,0 +1,200 @@
+config_version = 2
+
+[bar.default]
+background_opacity = 0.97999997809529305
+capsule_border = "surface_variant"
+capsule_fill = "on_tertiary"
+capsule_foreground = "outline"
+capsule_thickness = 0.67999998852610588
+center = [ "active_window" ]
+end = [ "mangowm-keymode", "tray", "cpu", "sysmon", "notifications", "volume", "control-center" ]
+font_family = "JetBrainsMono Nerd Font"
+font_weight = 700
+hover_highlight = false
+margin_edge = 3
+margin_ends = 500
+padding = 11
+radius = 19
+scale = 0.90000000596046448
+start = [ "workspaces", "clock", "media" ]
+thickness = 33
+widget_spacing = 10
+
+[calendar]
+enabled = true
+
+[desktop_widgets]
+enabled = false
+
+[location]
+address = "lahore"
+auto_locate = true
+
+[lockscreen]
+blur_intensity = 0.12999999709427357
+fingerprint = false
+tint_intensity = 0.25999999418854713
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-widget-0000000000000001" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = false
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 64.0
+    box_width = 407.630859375
+    cx = 964.0166015625
+    cy = 913.90625
+    output = "HDMI-A-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface"
+        background_opacity = 0.83999999999999997
+        background_radius = 32.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 31.0
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_password_hint = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 176.81640625
+    box_width = 345.96484375
+    cx = 960.0
+    cy = 511.158203125
+    output = "HDMI-A-1"
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        center_text = false
+        clock_style = "digital"
+        color = "on_surface"
+        font_family = "DejaVu Sans Condensed"
+        format = "{:%I:%M %p}"
+        shadow = false
+
+[notification]
+background_opacity = 0.99999997764825821
+
+[plugins]
+enabled = [ "gambled23/mangowm-keymode", "noctalia/bongocat" ]
+
+[shell]
+app_icon_color = "error"
+app_icon_colorize = true
+avatar_path = "/home/huraira/Downloads/79788381.png"
+font_family = "JetBrainsMono Nerd Font"
+settings_show_advanced = true
+time_format = "{:%I:%M %p}"
+
+    [shell.panel]
+    floating_offset = 3
+    open_near_click_control_center = true
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Monochrome"
+mode = "dark"
+source = "community"
+wallpaper_scheme = "soft"
+
+[wallpaper]
+directory = "/home/huraira/Pictures/wallpapers"
+transition_on_startup = true
+
+    [wallpaper.default]
+    path = "/home/huraira/Pictures/wallpapers/wallhaven-6kv9ww_1920x1080 (1).png"
+
+    [wallpaper.last]
+    path = "/home/huraira/Pictures/wallpapers/wallhaven-6kv9ww_1920x1080 (1).png"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/huraira/Pictures/wallpapers/wallhaven-6kv9ww_1920x1080 (1).png"
+
+[widget.active_window]
+anchor = true
+color = "error"
+display = "text_only"
+max_length = 221
+title_scroll = "on_hover"
+
+[widget.clock]
+color = "tertiary"
+enabled = true
+format = "{:%I:%M %p}"
+
+[widget.control-center]
+color = "error"
+custom_image = "/home/huraira/Pictures/cachyos-linux.webp"
+custom_image_colorize = true
+icon_color = "error"
+scale = 1.1500000000000001
+
+[widget.cpu]
+color = "error"
+highlight_color = "secondary"
+scale = 1.1000000000000001
+show_label = false
+
+[widget.mangowm-keymode]
+color = "surface_variant"
+icon_color = "on_tertiary"
+scale = 0.20000000000000001
+show_text = false
+type = "gambled23/mangowm-keymode:mangowm-keymode"
+
+[widget.media]
+art_size = 19
+hide_when_no_media = true
+max_length = 151
+title_scroll = "on_hover"
+
+[widget.notifications]
+color = "error"
+
+[widget.session]
+color = "tertiary"
+custom_image = "/usr/share/noctalia/assets/images/distros/cachy.svg"
+custom_image_colorize = true
+icon_color = "tertiary"
+scale = 1.1500000000000001
+
+[widget.sysmon]
+color = "error"
+highlight_color = "secondary"
+scale = 1.05
+show_label = false
+stat = "cpu_temp"
+
+[widget.tray]
+color = "error"
+drawer = true
+drawer_item_size = 15.0
+scale = 0.75
+
+[widget.volume]
+color = "error"
+mute_color = "secondary"
+scale = 1.05
+show_label = false
+
+[widget.workspaces]
+active_pill_size = 2.4500000000000002
+empty_color = "primary"
+focused_color = "error"
+hide_when_empty = true
+inactive_pill_size = 1.05
+occupied_color = "error"
+pill_scale = 0.80000000000000004
+scale = 0.94999999999999996

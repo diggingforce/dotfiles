@@ -3,7 +3,7 @@ configuration {
     font: "Rubik 10";
     display-drun: "";
     sidebar-mode: false;
-    terminal: "/usr/bin/kitty";
+    terminal: "/usr/bin/foot";
     drun-exclude-categories: "Screensaver";
 }
 
