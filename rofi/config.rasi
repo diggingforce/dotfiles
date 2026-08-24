@@ -1,6 +1,6 @@
 configuration {
     modi: "drun";
-    font: "Rubik 10";
+    font: "Maple Mono Bold 9";
     display-drun: "";
     sidebar-mode: false;
     terminal: "/usr/bin/foot";

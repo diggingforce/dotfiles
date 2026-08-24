@@ -16,55 +16,54 @@
         "break",
         {
             "type": "custom",
-            "key": "╭───────────────────────────────────╮"
+            "key": "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
         },
         {
             "type": "command",
-            "key": "│   user   ",
+            "key": "┃   user   ",
             "text": "echo $USER",
-            "format": "{>22} │"
+            "format": "{>22} ┃"
         },
         {
             "type": "kernel",
-            "key": "│   kernel ",
-            "format": "{release>22} │"
+            "key": "┃   kernel ",
+            "format": "{release>22} ┃"
         },
-
         {
             "type": "os",
-            "key": "│   distro ",
-            "format": "{pretty-name>22} │"
+            "key": "┃   distro ",
+            "format": "{pretty-name>22} ┃"
         },
         {
             "type": "wm",
-            "key": "│   wm     ",
-            "format": "{pretty-name>22} │"
+            "key": "┃   wm     ",
+            "format": "{pretty-name>22} ┃"
         },
         {
             "type": "shell",
-            "key": "│   shell  ",
-            "format": "{pretty-name>22} │"
+            "key": "┃   shell  ",
+            "format": "{pretty-name>22} ┃"
         },
         {
             "type": "command",
-            "key": "│   uptime ",
+            "key": "┃   uptime ",
             "text": "uptime -p | cut -d ' ' -f 2-",
-            "format": "{>22} │"
+            "format": "{>22} ┃"
         },
         {
             "type": "command",
-            "key": "│   mem    ",
+            "key": "┃   mem    ",
             "text": "free -m | awk 'NR==2{printf \"%.2f GiB / %.2f GiB\",$3/1024,$2/1024}'",
-            "format": "{>22} │"
+            "format": "{>22} ┃"
         },
         {
             "type": "packages",
-            "key": "│   pkgs   ",
-            "format": "{all>22} │"
+            "key": "┃   pkgs   ",
+            "format": "{all>22} ┃"
         },
         {
             "type": "custom",
-            "key": "╰───────────────────────────────────╯"
+            "key": "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
         },
         "break"
     ]

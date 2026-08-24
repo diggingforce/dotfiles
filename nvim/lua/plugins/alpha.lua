@@ -40,7 +40,7 @@ return {
 
       dashboard.section.buttons.val = {
         dashboard.button("n", "󰈔  New File", "<cmd>ene | startinsert<CR>"),
-        dashboard.button("p", "󰉋  Load Projects", "<cmd>e ~/projects<CR>"),
+        dashboard.button("p", "󰉋  Load Projects", "<cmd>e ~/Projects<CR>"),
         dashboard.button("q", "󰈆  Quit", "<cmd>qa<CR>"),
       }
       dashboard.section.buttons.opts.spacing = 0
