@@ -3,8 +3,6 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 export EDITOR=nvim
 export VISUAL=nvim
 
-# Configure terminal notifications (done.fish) for MangoWM
-# Trigger notifications for commands taking 3+ seconds when window is unfocused
 set -U __done_min_cmd_duration 3000
 set -U __done_notification_urgency_level normal
 
@@ -32,7 +30,6 @@ function fish_prompt
 end
 
 function fish_greeting
-    # smth smth
 end
-stty -ixon
 
+stty -ixon

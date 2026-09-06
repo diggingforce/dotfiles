@@ -1,11 +1,12 @@
-config_version = 13
+config_version = 14
 
 [bar.default]
 background_opacity = 0.89999997988343239
+border = "error"
 capsule_border = "surface_variant"
 capsule_fill = "on_tertiary"
 capsule_foreground = "outline"
-capsule_thickness = 0.67999998852610588
+capsule_thickness = 0.50999999232590199
 center = [ "active_window" ]
 end = [ "mangowm-keymode", "tray", "cpu", "sysmon", "notifications", "volume", "control-center" ]
 font_family = "Maple Mono"
@@ -14,7 +15,7 @@ hover_highlight = false
 margin_edge = 3
 margin_ends = 500
 padding = 11
-radius = 19
+radius = 73
 scale = 0.90000000596046448
 shadow = false
 start = [ "workspaces", "clock", "media" ]
@@ -29,6 +30,9 @@ show_events_card = false
 
 [desktop_widgets]
 enabled = false
+
+[dock]
+background_opacity = 0.99999997764825821
 
 [location]
 address = "lahore"
@@ -94,9 +98,6 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-widget-00000000000
         center_text = true
         clock_style = "digital"
         format = "{:%I:%M %p}"
-
-[notification]
-background_opacity = 0.99999997764825821
 
 [plugins]
 enabled = [ "gambled23/mangowm-keymode" ]
