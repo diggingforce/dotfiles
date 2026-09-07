@@ -1,8 +1,6 @@
 config_version = 14
 
 [bar.default]
-background_opacity = 0.89999997988343239
-border = "error"
 capsule_border = "surface_variant"
 capsule_fill = "on_tertiary"
 capsule_foreground = "outline"
@@ -10,7 +8,7 @@ capsule_thickness = 0.50999999232590199
 center = [ "active_window" ]
 end = [ "mangowm-keymode", "tray", "cpu", "sysmon", "notifications", "volume", "control-center" ]
 font_family = "Maple Mono"
-font_weight = 700
+font_weight = 800
 hover_highlight = false
 margin_edge = 3
 margin_ends = 500
@@ -33,9 +31,10 @@ enabled = false
 
 [dock]
 background_opacity = 0.99999997764825821
+shadow = false
 
 [location]
-address = "lahore"
+address = "Lahore"
 auto_locate = true
 
 [lockscreen]
@@ -103,11 +102,12 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-widget-00000000000
 enabled = [ "gambled23/mangowm-keymode" ]
 
 [shell]
-app_icon_color = "error"
+app_icon_color = "primary"
 app_icon_colorize = true
 avatar_path = "/home/huraira/Pictures/pfps i like/79788381.png"
 font_family = "Maple Mono ExtraBold"
 polkit_agent = true
+popup_shadows = false
 settings_show_advanced = true
 time_format = "{:%I:%M %p}"
 
@@ -117,15 +117,17 @@ time_format = "{:%I:%M %p}"
     [shell.panel]
     floating_offset = 3
     open_near_click_control_center = true
+    shadow = false
 
-[system.monitor]
-gpu_poll_seconds = 2
+    [shell.shadow]
+    alpha = 0.0
 
 [theme]
 builtin = "Noctalia"
 community_palette = "Monochrome"
+custom_palette = "Monochrome"
 mode = "dark"
-source = "community"
+source = "custom"
 wallpaper_scheme = "soft"
 
     [theme.templates]
@@ -152,7 +154,7 @@ transition_on_startup = true
 
 [widget.active_window]
 anchor = true
-color = "error"
+color = "primary"
 display = "text_only"
 max_length = 221
 title_scroll = "on_hover"
@@ -163,14 +165,14 @@ enabled = true
 format = "{:%I:%M %p}"
 
 [widget.control-center]
-color = "error"
+color = "primary"
 custom_image = "/home/huraira/Pictures/CachyOS.webp"
 custom_image_colorize = true
-icon_color = "error"
+icon_color = "primary"
 scale = 1.1500000000000001
 
 [widget.cpu]
-color = "error"
+color = "primary"
 highlight_color = "secondary"
 scale = 1.1000000000000001
 show_label = false
@@ -185,13 +187,14 @@ type = "gambled23/mangowm-keymode:mangowm-keymode"
 
 [widget.media]
 art_size = 19
+color = "error"
 hide_artist = true
 hide_when_no_media = true
 max_length = 151
 title_scroll = "on_hover"
 
 [widget.notifications]
-color = "error"
+color = "primary"
 
 [widget.session]
 color = "tertiary"
@@ -201,30 +204,30 @@ icon_color = "tertiary"
 scale = 1.1500000000000001
 
 [widget.sysmon]
-color = "error"
+color = "primary"
 highlight_color = "secondary"
 scale = 1.05
 show_value = false
 stat = "cpu_temp"
 
 [widget.tray]
-color = "error"
+color = "primary"
 drawer = true
 drawer_item_size = 15.0
 scale = 0.75
 
 [widget.volume]
-color = "error"
+color = "primary"
 mute_color = "secondary"
 scale = 1.05
 show_label = false
 
 [widget.workspaces]
 active_pill_size = 2.4500000000000002
-empty_color = "primary"
-focused_color = "error"
+empty_color = "error"
+focused_color = "primary"
 hide_when_empty = true
 inactive_pill_size = 1.05
-occupied_color = "error"
+occupied_color = "primary"
 pill_scale = 0.80000000000000004
 scale = 0.94999999999999996
