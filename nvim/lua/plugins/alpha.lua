@@ -67,6 +67,41 @@ return {
       return dashboard
     end,
     config = function(_, dashboard)
+      local laststatus = 3
+
+      local group = vim.api.nvim_create_augroup("alpha_hide_statusline", { clear = true })
+
+      vim.api.nvim_create_autocmd({ "FileType", "BufEnter", "User" }, {
+        group = group,
+        pattern = { "alpha", "AlphaReady", "VeryLazy" },
+        callback = function()
+          if vim.bo.filetype == "alpha" then
+            vim.opt.laststatus = 0
+          end
+        end,
+      })
+
+      vim.api.nvim_create_autocmd("BufUnload", {
+        group = group,
+        callback = function(ev)
+          if vim.bo[ev.buf].filetype == "alpha" then
+            vim.opt.laststatus = laststatus
+          end
+        end,
+      })
+
+      -- close Lazy and re-open when the dashboard is ready
+      if vim.o.filetype == "lazy" then
+        vim.cmd.close()
+        vim.api.nvim_create_autocmd("User", {
+          once = true,
+          pattern = "AlphaReady",
+          callback = function()
+            require("lazy").show()
+          end,
+        })
+      end
+
       require("alpha").setup(dashboard.opts)
     end,
   },
