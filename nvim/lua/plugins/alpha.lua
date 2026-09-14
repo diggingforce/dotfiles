@@ -2,8 +2,8 @@ return {
   {
     "goolord/alpha-nvim",
     event = "VimEnter",
-    opts = function()
-      local dashboard = require("alpha.themes.dashboard")
+    opts = function(_, dashboard)
+      dashboard = dashboard or require("alpha.themes.dashboard")
 
       local custom_ascii = {
         [[                                   ]],
@@ -15,14 +15,17 @@ return {
         [[                                   ]],
       }
 
-      local handle = io.popen("fastfetch -l none --pipe")
-      local result = handle:read("*a")
-      handle:close()
-
-      result = string.gsub(result, "\27%[[0-9;]*[mKABCDEFGHfJ]", "")
-      result = result:match("^%s*(.-)%s*$")
-
-      local fastfetch_lines = vim.split(result, "\n")
+      local fastfetch_lines = {}
+      local handle = io.popen("fastfetch -l none --pipe 2>/dev/null")
+      if handle then
+        local result = handle:read("*a") or ""
+        handle:close()
+        result = string.gsub(result, "\27%[[0-9;]*[mKABCDEFGHfJ]", "")
+        result = result:match("^%s*(.-)%s*$") or ""
+        if result ~= "" then
+          fastfetch_lines = vim.split(result, "\n")
+        end
+      end
 
       vim.api.nvim_set_hl(0, "AlphaWhiteText", { fg = "#FFFFFF" })
 

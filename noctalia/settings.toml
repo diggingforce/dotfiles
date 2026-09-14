@@ -99,7 +99,7 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-widget-00000000000
         format = "{:%I:%M %p}"
 
 [plugins]
-enabled = [ "gambled23/mangowm-keymode" ]
+enabled = [ "gambled23/mangowm-keymode", "gustav0ar/drive-health" ]
 
 [shell]
 app_icon_color = "primary"
@@ -118,6 +118,7 @@ time_format = "{:%I:%M %p}"
     floating_offset = 3
     open_near_click_control_center = true
     shadow = false
+    wallpaper_placement = "floating"
 
     [shell.shadow]
     alpha = 0.0
@@ -131,10 +132,11 @@ source = "custom"
 wallpaper_scheme = "soft"
 
     [theme.templates]
-    community_ids = [ "obsidian", "heroiclauncher", "prismlauncher" ]
+    community_ids = [ "ungoogled-chromium", "heroiclauncher", "prismlauncher" ]
 
 [wallpaper]
 directory = "/home/huraira/Pictures/wallpapers"
+transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
 transition_on_startup = true
 
     [wallpaper.default]
@@ -147,9 +149,15 @@ transition_on_startup = true
     path = "/home/huraira/Pictures/wallpapers/wallhaven-6kv9ww_1920x1080 (1).png"
 
     [[wallpaper.favorite]]
-    community_palette = "Monochrome"
-    palette_source = "community"
+    custom_palette = "Monochrome"
+    palette_source = "custom"
     path = "/home/huraira/Pictures/wallpapers/wallhaven-6kv9ww_1920x1080 (1).png"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    custom_palette = "Monochrome"
+    palette_source = "custom"
+    path = "/home/huraira/Pictures/wallpapers/wallhaven-477794_1920x1080.png"
     theme_mode = "dark"
 
 [widget.active_window]
@@ -187,7 +195,7 @@ type = "gambled23/mangowm-keymode:mangowm-keymode"
 
 [widget.media]
 art_size = 19
-color = "error"
+color = "on_surface_variant"
 hide_artist = true
 hide_when_no_media = true
 max_length = 151

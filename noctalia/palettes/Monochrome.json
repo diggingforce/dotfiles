@@ -1,12 +1,12 @@
 {
   "dark": {
-    "mPrimary": "#dddddd",
+    "mPrimary": "#ffffff",
     "mOnPrimary": "#191919",
     "mSecondary": "#d9d7d6",
     "mOnSecondary": "#191919",
     "mTertiary": "#cccccc",
     "mOnTertiary": "#191919",
-    "mError": "#888888",
+    "mError": "#ffffff",
     "mOnError": "#191919",
     "mSurface": "#191919",
     "mOnSurface": "#dddddd",
@@ -14,7 +14,7 @@
     "mOnSurfaceVariant": "#a6a6a6",
     "mOutline": "#2e2e2e",
     "mShadow": "#000000",
-    "mHover": "#dddddd",
+    "mHover": "#ffffff",
     "mOnHover": "#191919",
     "terminal": {
       "foreground": "#d9d7d6",
