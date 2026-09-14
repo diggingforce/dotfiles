@@ -46,6 +46,8 @@ return {
           "NvimTreeNormal",
           "NeoTreeNormal",
           "NeoTreeNormalNC",
+          "lualine_c_normal",
+          "lualine_c_inactive",
         },
       })
     end,
