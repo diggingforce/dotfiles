@@ -5,12 +5,6 @@ return {
       enabled = false,
     },
     picker = {
-      icons = {
-        files = {
-          dir = " ",
-          dir_open = " ",
-        },
-      },
       sources = {
         explorer = {
           -- 1. Hides the "Explorer" text at the top
